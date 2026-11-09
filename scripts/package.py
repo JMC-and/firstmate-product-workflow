@@ -13,6 +13,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import stat
 import subprocess
 import tarfile
 import tempfile
@@ -31,6 +32,9 @@ def inventory():
         path = ROOT / row['path']
         if hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']:
             raise ValueError('package integrity mismatch: ' + row['path'])
+        mode = format(stat.S_IFREG | stat.S_IMODE(path.stat().st_mode), '06o')
+        if mode != row['mode']:
+            raise ValueError('package mode mismatch: ' + row['path'])
     return rows
 
 
