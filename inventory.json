@@ -1,0 +1,209 @@
+{
+  "source": "https://github.com/Bytes-Brands/firstmate",
+  "commit": "733763dd844b8101fc6f55ee6abb1a442ff19173",
+  "files": [
+    {
+      "path": "LICENSE",
+      "source_path": "LICENSE",
+      "sha256": "945016bd37e1ba7211622ef60ee1d23ab727896ba7710edd21e8fbe983863969",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-build/SKILL.md",
+      "source_path": ".agents/skills/product-build/SKILL.md",
+      "sha256": "0efb9040f035e2ea0c2e44a2ccdc36659590ee5d38f6d0d6685e3bdca52c7060",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/SKILL.md",
+      "source_path": ".agents/skills/product-contract/SKILL.md",
+      "sha256": "3415ed23ff6f6b076aeb314056a08e9f0a0e7df08a337af7167a94552f2daf40",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/acceptance.md",
+      "source_path": ".agents/skills/product-contract/references/acceptance.md",
+      "sha256": "b6fd048023400165e1c3766e5d64945a2188e6f1a2dd95e657755c82428aafdd",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/attribution.md",
+      "source_path": ".agents/skills/product-contract/references/attribution.md",
+      "sha256": "e40301c288645188313ab97112e70773b84e69b8bbcc1a1be4d99b92d4bbff97",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/evidence.md",
+      "source_path": ".agents/skills/product-contract/references/evidence.md",
+      "sha256": "e396751b344afdb24d16d9cdeccf4de465e1f8fc0294e31d2ec99bf2c78e82fa",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/extraction.md",
+      "source_path": ".agents/skills/product-contract/references/extraction.md",
+      "sha256": "deeff822b0308805413767640c9b2dbc2549bab1e052e4247d55174ce91e0d1f",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/improvement.md",
+      "source_path": ".agents/skills/product-contract/references/improvement.md",
+      "sha256": "4f761cedab0b465f93ed64b0ec757ebb34af2bb974669ace37dcac7fa58d1eab",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/interfaces.md",
+      "source_path": ".agents/skills/product-contract/references/interfaces.md",
+      "sha256": "c623b0fe3575a7327a619736e8156ea2393d8b76b11b535afb754655f6069cc5",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/interrogation.md",
+      "source_path": ".agents/skills/product-contract/references/interrogation.md",
+      "sha256": "be90abfae8ec70d9eae27118fbfea8ceed3f7d060e3a2891f6b6909bdb78b73d",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/lifecycle.md",
+      "source_path": ".agents/skills/product-contract/references/lifecycle.md",
+      "sha256": "0c83fea7678128c7981dc16a6bfeb51c1aee2df20668ae4d9efaedf84643e224",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/proportionality.md",
+      "source_path": ".agents/skills/product-contract/references/proportionality.md",
+      "sha256": "baa3f0a6e27926cee4fd45173c9caf2c5e70b944bb200c242fdb8928a7c39e4f",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/slicing.md",
+      "source_path": ".agents/skills/product-contract/references/slicing.md",
+      "sha256": "9e1e7a2070f712e7193336db7af962fc1f875b92d1f7bb94ea2771a9197d0de4",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-contract/references/specification.md",
+      "source_path": ".agents/skills/product-contract/references/specification.md",
+      "sha256": "09a7d744d80c9c278a21c23a5a90e41107df3e0e59267bc8c5a183a08841ea7b",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": ".agents/skills/product-plan/SKILL.md",
+      "source_path": ".agents/skills/product-plan/SKILL.md",
+      "sha256": "1faa0882d32d590c586032cbc27250eeed5b77fcc0f4577f95be1afab17bfe6c",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "bin/fm-product-build.py",
+      "source_path": "bin/fm-product-build.py",
+      "sha256": "d720f2b953cef67c509f9d93bc8d5dd2709efd85b5dbb1ed33f5e7b3a2c9d164",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "bin/fm-product-contract-lib.sh",
+      "source_path": "bin/fm-product-contract-lib.sh",
+      "sha256": "6ed671157cdf0f93c4ccce9dd0bb033f5fb63b879eb9b7ebdc46fcb5b3cf4cf6",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "bin/fm-product-contract.py",
+      "source_path": "bin/fm-product-contract.py",
+      "sha256": "517b733dd942193ac4415636907f8f6252ed121beb669b331a6d0494b26b9aca",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "bin/fm-product-contract.sh",
+      "source_path": "bin/fm-product-contract.sh",
+      "sha256": "9fabb42dd01756f84fc668516a5dcd8b4c7780c514a3d30e483c25a39235566d",
+      "mode": "100755",
+      "adaptations": "none"
+    },
+    {
+      "path": "bin/fm-product-graph.py",
+      "source_path": "bin/fm-product-graph.py",
+      "sha256": "f253532688c0a3cb040ad13704a2dc28a28437efc16deab19643e92bcb6afb6c",
+      "mode": "100755",
+      "adaptations": "none"
+    },
+    {
+      "path": "bin/fm-product-report.py",
+      "source_path": "bin/fm-product-report.py",
+      "sha256": "c03a068ac6a62c55f00b932636b32e475cb947aaceb4198f769e22f47e8c37a0",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-build.test.py",
+      "source_path": "tests/fm-product-build.test.py",
+      "sha256": "c80142db29cbed613607fead166600f9347c4d12b2c94f91729580f573029941",
+      "mode": "100644",
+      "adaptations": "Removed prompt-prose assertions; retained discovery metadata assertions."
+    },
+    {
+      "path": "tests/fm-product-build.test.sh",
+      "source_path": "tests/fm-product-build.test.sh",
+      "sha256": "2803e2c81ee6dfd1f786e18b4a8f1a9b276db57feb1df0ccc2d5917642ed3aab",
+      "mode": "100755",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-contract.test.py",
+      "source_path": "tests/fm-product-contract.test.py",
+      "sha256": "5af86332a232e4bc5c0151a9a73885c05939c20abb3159d9f370335c7a0e3aaf",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-contract.test.sh",
+      "source_path": "tests/fm-product-contract.test.sh",
+      "sha256": "577e2d0c8b0db64a0bcb3681e947c54bbe4d41eaab94a79fe9db1ee1e6385de9",
+      "mode": "100755",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-graph.test.py",
+      "source_path": "tests/fm-product-graph.test.py",
+      "sha256": "a94a03f1ddae95f9d59ab639a4e0ea59f7d6d1b7fc06da3644a1553b14f992f4",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-graph.test.sh",
+      "source_path": "tests/fm-product-graph.test.sh",
+      "sha256": "de7d1a561b2a07e80c1b4c1d65f15315e7ea67ce8bbfa50fb8120c02b4e8abd7",
+      "mode": "100755",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-report.test.py",
+      "source_path": "tests/fm-product-report.test.py",
+      "sha256": "27e2fc2e70961fed39bc0e51ef2be5b01c331513d444c7d6dd1257d12fe89941",
+      "mode": "100644",
+      "adaptations": "none"
+    },
+    {
+      "path": "tests/fm-product-report.test.sh",
+      "source_path": "tests/fm-product-report.test.sh",
+      "sha256": "3b739e1136e0fab3f2bb93b66616b75ddf45de2c50ba43a22902faf8e3fff076",
+      "mode": "100755",
+      "adaptations": "none"
+    }
+  ]
+}
