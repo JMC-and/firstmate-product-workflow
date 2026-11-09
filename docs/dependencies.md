@@ -2,9 +2,9 @@
 
 ## Copied material
 
-`inventory.json` lists every copied file, its unchanged upstream path, mode and SHA-256 at Firstmate commit `733763dd844b8101fc6f55ee6abb1a442ff19173`.
+`inventory.json` lists every copied file, its upstream path, mode, packaged SHA-256 and any adaptation from Firstmate commit `733763dd844b8101fc6f55ee6abb1a442ff19173`.
 The inventory includes the MIT license, three skill entry points, eleven contract references, six executables/libraries and eight focused test files.
-No source code, skill semantics, schema, pin or approval predicate was adapted.
+No production source code, skill semantics, schema, pin or approval predicate was adapted. One build test omits upstream prompt-prose assertions while retaining discovery metadata coverage.
 New packaging-owned files are `README.md`, this document, `inventory.json`, `.gitignore` and `scripts/package.py`.
 No Home records, credentials, lead-generation skill or unrelated Firstmate internals are redistributed.
 The generic contract regression retains an upstream synthetic leads-themed negative-evidence replay; it contains no business data, scraper or lead-generation workflow.

@@ -152,9 +152,9 @@
     {
       "path": "tests/fm-product-build.test.py",
       "source_path": "tests/fm-product-build.test.py",
-      "sha256": "43b8edf8c8cc843924cb8950e7b03efc0d5efb3df8293f20f4d95bacb54f9457",
+      "sha256": "c80142db29cbed613607fead166600f9347c4d12b2c94f91729580f573029941",
       "mode": "100644",
-      "adaptations": "none"
+      "adaptations": "Removed prompt-prose assertions; retained discovery metadata assertions."
     },
     {
       "path": "tests/fm-product-build.test.sh",

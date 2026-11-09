@@ -68,6 +68,6 @@ done
 ## License and provenance
 
 [MIT, copyright 2026 Kun Chen](LICENSE).
-All copied workflow and test files are byte-for-byte unchanged from the pinned Firstmate commit, including executable modes.
+All copied workflow files are byte-for-byte unchanged from the pinned Firstmate commit, including executable modes; `inventory.json` records the single test-only assertion adaptation.
 [Design attribution and retained MIT notices](.agents/skills/product-contract/references/attribution.md) credit Matt Pocock, Jesse Vincent and GitHub.
 Graphify is a separately installed dependency, not redistributed here.

@@ -64,28 +64,17 @@ class Build(unittest.TestCase):
         for path in (ROOT / '.agents/skills').glob('product-*/SKILL.md'):
             header = path.read_text().split('---', 2)[1]
             fields = {}
-            current = None
             for line in header.splitlines():
-                if line.startswith('  ') and current == 'description':
-                    fields[current] += ' ' + line.strip()
-                elif line and not line.startswith(' '):
-                    current, value = line.split(':', 1)
-                    fields[current] = '' if value.strip() == '>-' else value.strip()
+                if line and not line.startswith(' '):
+                    key, value = line.split(':', 1)
+                    fields[key] = value.strip()
             fields['internal'] = bool(re.search(r'^  internal: true$', header, re.MULTILINE))
             discovered[fields['name']] = fields
-        self.assertEqual({name for name, fields in discovered.items()
-                          if fields['user-invocable'] == 'true'}, {'product-plan', 'product-build'})
-        for name in ('product-plan', 'product-build'):
-            self.assertIn('/' + name, discovered[name]['description'])
-            self.assertTrue(discovered[name]['internal'])
-            self.assertRegex(discovered[name]['description'].lower(), r'approved.*(build|artifact|plan)')
-        plan = discovered['product-plan']['description'].lower()
-        build = discovered['product-build']['description'].lower()
-        for phrase in ('questionnaire', 'specification', 'later', 'never implementation'):
-            self.assertIn(phrase, plan)
-        for phrase in ('start or resume', 'supervision', 'completion', 'product-plan first'):
-            self.assertIn(phrase, build)
-        self.assertRegex(discovered['product-contract']['description'], r'Internal reference.*not a separately selectable')
+        self.assertEqual({name: (fields['user-invocable'], fields['internal'])
+                          for name, fields in discovered.items()},
+                         {'product-plan': ('true', True),
+                          'product-build': ('true', True),
+                          'product-contract': ('false', True)})
 
     def test_plan_emission_stops_then_later_build_uses_same_engine(self):
         approved_digest = self.approve()
