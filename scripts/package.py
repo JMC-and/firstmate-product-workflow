@@ -26,6 +26,15 @@ def git(source, *args):
     return subprocess.check_output(['git', '-C', str(source), *args], text=True).strip()
 
 
+def install_root(source):
+    if git(source, 'rev-parse', '--is-bare-repository') != 'false':
+        raise ValueError('installation requires a non-bare worktree root')
+    top = Path(git(source, 'rev-parse', '--show-toplevel')).resolve()
+    if source.resolve() != top:
+        raise ValueError('installation requires the worktree root: ' + str(top))
+    return top
+
+
 def inventory():
     rows = json.loads((ROOT / 'inventory.json').read_text())['files']
     for row in rows:
@@ -65,6 +74,11 @@ def main():
     source = args.firstmate
     if not source.is_absolute() or not source.is_dir():
         parser.error('an absolute existing Firstmate checkout is required')
+    if args.command == 'install':
+        try:
+            source = install_root(source)
+        except ValueError as error:
+            parser.error(str(error))
     if git(source, 'rev-parse', 'HEAD') != PIN:
         parser.error('only Firstmate commit ' + PIN + ' is supported')
     rows = inventory()
