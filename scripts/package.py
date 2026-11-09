@@ -30,11 +30,14 @@ def inventory():
     rows = json.loads((ROOT / 'inventory.json').read_text())['files']
     for row in rows:
         path = ROOT / row['path']
-        if hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']:
-            raise ValueError('package integrity mismatch: ' + row['path'])
-        mode = format(stat.S_IFREG | stat.S_IMODE(path.stat().st_mode), '06o')
+        metadata = path.lstat()
+        mode = None
+        if stat.S_ISREG(metadata.st_mode):
+            mode = '100755' if metadata.st_mode & stat.S_IXUSR else '100644'
         if mode != row['mode']:
             raise ValueError('package mode mismatch: ' + row['path'])
+        if hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']:
+            raise ValueError('package integrity mismatch: ' + row['path'])
     return rows
 
 
