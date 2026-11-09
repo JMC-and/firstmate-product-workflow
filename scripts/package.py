@@ -39,7 +39,9 @@ def overlay(target, rows, tests=False):
         if not tests and row['path'].startswith('tests/'):
             continue
         path = target / row['path']
-        if any(p.is_symlink() for p in [path, *path.parents]):
+        relative = path.relative_to(target)
+        if path.is_symlink() or any((target / parent).is_symlink()
+                                    for parent in relative.parents):
             raise ValueError('symlink target refused: ' + str(path))
         path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / row['path'], path)
