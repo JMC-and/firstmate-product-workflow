@@ -2,7 +2,8 @@
 """Install the pinned workflow overlay or run focused tests in a disposable fixture.
 
 Usage: python3 scripts/package.py {install,test} /absolute/firstmate-checkout
-install requires a clean checkout at the supported commit and explicit invocation.
+install requires the clean non-bare worktree root at the supported commit and
+explicit invocation.
 It copies only inventory-listed workflow files, not tests or private Home data.
 test reads the checkout's committed tree, overlays this package in a temporary
 fixture, and runs the four focused upstream suites without live model launches.

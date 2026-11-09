@@ -18,7 +18,8 @@ python3.12 scripts/package.py install /absolute/path/to/firstmate
 ```
 
 Package tooling requires Python 3.12+; workflow commands use Firstmate's `python3`, Bash and Git.
-The installer checks the exact clean revision and inventory hashes, copies only the workflow files, and does not edit Home, hook configuration or runtime selection.
+The installer requires the clean, non-bare Firstmate worktree root and checks its exact revision plus the package inventory's hashes and executable modes.
+It copies only the workflow files and does not edit Home, hook configuration or runtime selection.
 Do not install the skill folders alone: relative references and executable lifecycle dependencies require the Firstmate layout.
 See [dependencies](docs/dependencies.md) and the per-file [source inventory](inventory.json).
 
